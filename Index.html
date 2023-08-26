@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http.http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="18-artpiece-original-imafknk46hcpndc3.webp" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Artist</p>
+                <h1>Hii, I'm <span>Snehal</span><br>Kanhekar from Amravati</h1>
+
+            </div>
+        </div>
+    </div>
+<!-- -------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Mee.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm Snehal Sunil Kanhekar. I recently completed my 1st year of graduation 
+                    and now I'm persuing 2nd year of graduation. I love making drawing and paintings 
+                    since my childhood. Now I am going to create new one. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Drawing</span><br>Making drawings and paintings</li>
+                            <li><span>Canvas painting</span><br>Draw using canvas</li>
+                            <li><span>Sketches</span><br>Make sketches using different pencils</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2022</span><br>Made a canvas painting of nature</li>
+                        <li><span>2021</span><br>Made a sketche of girl</li>
+                    </ul>
+                </div> </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2023</span><br>Currently persuing 2nd year of graduation,Amravati</li>
+                        <li><span>2022</span><br>Completed HSC Education,Amravati</li>
+                        <li><span>2020</span><br>Completed SSC Education,Amravati</li>
+                    </ul>
+                </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------services--------- -->
+<div id=services>
+    <div class="container"></div>
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list"></div>
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks)
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add(active-tab)
+
+    </script>
+
+
+    </body>
+</html>
